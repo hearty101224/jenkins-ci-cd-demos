@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/hearty101224/jenkins-ci-cd-demos.git'
+                git credentialsId: 'github-credentials', branch: 'main', url: 'https://github.com/hearty101224/jenkins-ci-cd-demos.git'
             }
         }
 
