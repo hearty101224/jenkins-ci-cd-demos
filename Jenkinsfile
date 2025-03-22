@@ -13,6 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building the application..."
+                bat 'python app.py'  // This will print the output of app.py
             }
         }
 
